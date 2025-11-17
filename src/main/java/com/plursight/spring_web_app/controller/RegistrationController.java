@@ -11,9 +11,10 @@ import java.util.Map;
 @Controller
 public class RegistrationController {
     @GetMapping("/registration")
+//    @modelAttribute used with form for get and post
     public String getRegistration(@ModelAttribute("registration")Registration registration) {
 
-        return "registration";
+        return "registration"; // file name in jsp folder
     }
 
     @PostMapping("/registration")
